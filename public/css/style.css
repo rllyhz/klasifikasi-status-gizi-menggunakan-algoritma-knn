@@ -1,0 +1,485 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: white;
+  color: #4e4e4e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+button, select, button, button.btn, .btn, a.btn {
+  border: none;
+  padding: 0.6rem 1.15rem;
+  border-radius: 4px;
+  background: none;
+  outline: none;
+}
+
+select, input[type=text], input[type=number] {
+  border: 1px solid #dedede;
+  color: #4e4e4e;
+  font-size: 1rem;
+  padding: 0.6rem 1.15rem;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: none;
+  transition: all 200ms ease-in-out;
+}
+select:focus, input[type=text]:focus, input[type=number]:focus {
+  box-shadow: 0 0 2px 7px solid #8865FF;
+  border: 1px solid #8865FF;
+  color: #8865FF;
+}
+select:focus + label, input[type=text]:focus + label, input[type=number]:focus + label {
+  color: #8865FF;
+}
+
+select {
+  color: #4e4e4e;
+}
+
+hr {
+  border: 1px solid #aeaeae;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  color: #4e4e4e;
+}
+
+small {
+  font-size: 12px;
+}
+
+nav.nav, .nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem 0;
+}
+
+button, button.btn, .btn, a.btn {
+  color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease-in-out;
+}
+button:hover, button.btn:hover, .btn:hover, a.btn:hover {
+  filter: opacity(0.85);
+}
+
+button.btn-primary, a.btn-primary {
+  background-color: #FB9EC4;
+}
+
+button.btn-primary-outline, a.btn-primary-outline {
+  background: none;
+  border: 1px solid #FB9EC4;
+  color: #FB9EC4;
+  box-shadow: none;
+}
+button.btn-primary-outline:hover, a.btn-primary-outline:hover {
+  background-color: #FB9EC4;
+  color: white;
+}
+
+button.btn-secondary, a.btn-secondary {
+  background-color: #FFDAC0;
+  color: #9c887a;
+}
+
+button.btn-secondary-outline, a.btn-secondary-outline {
+  background: none;
+  border: 1px solid #ecaf9e;
+  color: #ecaf9e;
+  box-shadow: none;
+}
+button.btn-secondary-outline:hover, a.btn-secondary-outline:hover {
+  background-color: #ecaf9e;
+  color: white;
+}
+
+button.cta, .cta, a.cta {
+  box-shadow: 1px 1.5px 4px 0 rgba(0, 0, 0, 0.3);
+  transition: all 400ms ease-in-out;
+}
+button.cta:hover, .cta:hover, a.cta:hover {
+  box-shadow: 1px 1.3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-sm {
+  padding: 0.4rem 0.8rem !important;
+}
+
+form, .form {
+  padding: 0.6rem 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem 0 1.2rem;
+}
+.form-group:hover label {
+  color: #8865FF;
+}
+.form-group label {
+  transition: color 300ms ease-in-out;
+  margin-bottom: 0.65rem;
+}
+.form-group input, .form-group select {
+  width: 100%;
+}
+.form-group small {
+  margin: 0.3rem 0 0 0.3rem;
+}
+
+.card {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.card .card-title {
+  padding: 0.85rem 0;
+}
+.card .card-title h3 {
+  text-align: center;
+}
+
+table, table.table, .table {
+  width: 100%;
+  border-radius: 4px !important;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+table thead, table tbody, table tr, table th, table td, table.table thead, table.table tbody, table.table tr, table.table th, table.table td, .table thead, .table tbody, .table tr, .table th, .table td {
+  border: 1px solid #ecaf9e;
+  padding: 0.05rem 0.45rem;
+}
+table thead, table.table thead, .table thead {
+  background-color: #FFDAC0;
+  border-bottom: 2px solid #ecaf9e;
+}
+table thead tr, table.table thead tr, .table thead tr {
+  color: #5c5c5c;
+}
+table thead tr th.highlight, table.table thead tr th.highlight, .table thead tr th.highlight {
+  color: white;
+}
+table tbody tr, table.table tbody tr, .table tbody tr {
+  transition: background-color 100ms ease-in-out;
+}
+table tbody tr:hover, table.table tbody tr:hover, .table tbody tr:hover {
+  background-color: #ffede0;
+}
+table tbody tr .highlight, table.table tbody tr .highlight, .table tbody tr .highlight {
+  color: #5cb85c;
+  font-weight: 600;
+}
+table tbody tr .nowrap, table.table tbody tr .nowrap, .table tbody tr .nowrap {
+  white-space: nowrap;
+}
+
+@keyframes modalFadeOut {
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+.modal.fade {
+  visibility: visible;
+  pointer-events: all;
+  opacity: 1;
+}
+.modal.fade .modal-dialog .modal-content {
+  transform: translateY(0);
+}
+.modal .modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.modal .modal-dialog .modal-content {
+  width: 70%;
+  margin: 15% auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: all 800ms 400ms ease-in-out;
+}
+.modal .modal-dialog .modal-content .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+.modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5c5c5c;
+  border-bottom: 1px solid #5c5c5c;
+}
+.modal .modal-dialog .modal-content .modal-header .close {
+  padding: 0;
+  margin: 0;
+  color: #5c5c5c;
+  box-shadow: none;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter 200ms ease-in-out;
+}
+.modal .modal-dialog .modal-content .modal-header .close:hover {
+  filter: opacity(0.8);
+}
+.modal .modal-dialog .modal-content .modal-body {
+  margin-bottom: 1.6rem;
+}
+.modal .modal-dialog .modal-content .modal-body form {
+  padding: 0;
+}
+body.modal-open {
+  overflow-y: hidden;
+}
+
+.row {
+  width: 100%;
+  display: grid;
+  grid-gap: 12px;
+}
+
+.row.row-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.row.row-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+@media (max-width: 680px) {
+  .row.row-cols-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .row.row-cols-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+.badge {
+  background-color: #eaeaea;
+  padding: 0.25rem;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.badge[role=button] {
+  cursor: pointer;
+}
+
+.badge.badge-primary {
+  background-color: #0275d8;
+}
+
+.badge.badge-success {
+  background-color: #5cb85c;
+}
+
+.badge.badge-info {
+  background-color: #5bc0de;
+}
+
+.badge.badge-warning {
+  background-color: #f0ad4e;
+}
+
+.badge.badge-danger {
+  background-color: #d9534f;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.container-fluid, .container {
+  margin: 0 auto;
+  paddging: 0.6rem 1rem;
+}
+
+.container {
+  width: 85%;
+}
+
+.container-fluid {
+  width: 92%;
+}
+
+.mx-1 {
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+
+.my-1 {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.mx-2 {
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+.my-2 {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.mx-3 {
+  margin-left: 1.65rem;
+  margin-right: 1.65rem;
+}
+
+.my-3 {
+  margin-top: 1.65rem;
+  margin-bottom: 1.65rem;
+}
+
+.mx-4 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.my-4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ml-1 {
+  margin-left: 0.6rem;
+}
+
+.mr-1 {
+  margin-right: 0.6rem;
+}
+
+.mt-1 {
+  margin-top: 0.6rem;
+}
+
+.mb-1 {
+  margin-bottom: 1.2rem;
+}
+
+.ml-2 {
+  margin-left: 1.2rem;
+}
+
+.mr-2 {
+  margin-right: 1.2rem;
+}
+
+.mt-2 {
+  margin-top: 1.2rem;
+}
+
+.mb-2 {
+  margin-bottom: 1.2rem;
+}
+
+.ml-3 {
+  margin-left: 1.65rem;
+}
+
+.mr-3 {
+  margin-right: 1.65rem;
+}
+
+.mt-3 {
+  margin-top: 1.65rem;
+}
+
+.mb-3 {
+  margin-bottom: 2rem;
+}
+
+.ml-4 {
+  margin-left: 2rem;
+}
+
+.mr-4 {
+  margin-right: 2rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

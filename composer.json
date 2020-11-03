@@ -1,0 +1,17 @@
+{
+    "name": "rllyhz/project-skripsi-algo-knn",
+    "type": "project",
+    "require-dev": {
+        "phpoffice/phpspreadsheet": "^1.15"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rully Ihza Mahendra",
+            "email": "rullyihza00@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "dev-master"
+    }
+}
