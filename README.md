@@ -12,10 +12,26 @@ Halaman Home
 
 ![Halaman Home](images/home.png)
 
+Halaman Hasil Perhitungan Menggunakan metode K-NN
+
+![Halaman Home](images/hasil_hitung.png)
+
+Halaman Data Hasil Perhitungan Menggunakan metode K-NN
+
+![Halaman Home](images/data_hasil_hitung.png)
+
 Halaman Dataset
 
 ![Halaman Home](images/dataset.png)
 
-Halaman Home
+Halaman Edit Dataset
 
-![Halaman Home](images/home.png)
+![Halaman Home](images/edit_dataset.png)
+
+Form Tambah Dataset
+
+![Halaman Home](images/form_tambah_dataset.png)
+
+Halaman Import Dataset
+
+![Halaman Home](images/import_dataset.png)
